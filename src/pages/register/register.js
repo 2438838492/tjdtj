@@ -1,4 +1,4 @@
- require('./register.css');
+ require('./register.less');
 //正则手机号码
 let reg = /^1[3456789]\d{9}$/im;
 //密码正则
