@@ -7,92 +7,82 @@ body {
     height         : 100%;
     display        : flex;
     flex-direction : column;
-    background     : url(../../assets/images/sign-bg.jpg)no-repeat center center;
+    background     : url(../../assets/images/sign-bg.jpg)no-repeat center top;
     background-size: cover;
 }
-
-.body {
-    display        : flex;
-    justify-content: end;
-
+.body{
+    width: 85%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: flex-end;
+    a{
+        color: #fff;
+        font-weight: bold;
+        font-size: 24px;
+    }
 }
 
-.body a {
-    margin       : 20px 20px;
-    height       : 20px;
-    width        : 100px;
-    font-size    : 20px;
-    line-height  : 20px;
-    border-radius: 10px;
-    text-align   : center;
-    color        : #fff;
-}
-
-form {
-    display       : flex;
+.form{
+    width: 85%;
+    margin: 10px auto;
+    display: flex;
     flex-direction: column;
-    align-items   : center;
-    margin-top    : 50px;
-}
-
-form a {
-    display   : block;
-    color     : #fff;
-    font-size : 20px;
-    align-self: flex-start
-}
-form p{
-    margin: 6px;
-}
-
-/* form p {
-    text-align: center;
-} */
-form input {
-    padding-left    : 10px;
-    border-radius   : 50px;
-    border          : none;
-    height          : 30px;
-    background-color: #867f88;
-    /* opacity      : 0.4; */
-}
-
-input::placeholder {
-    color    : #fff;
-    font-size: 12px;
-}
-
-form button {
-    color           : #fff;
-    width           : 225.6px;
-    height          : 32px;
-    height          : 30px;
-    border          : none;
-    border-radius   : 50px;
-    background-color: #387f5c;
-    font-size       : 14px;
-    line-height     : 32px;
-}
-
-span {
-    font-size: 12px;
-    color    : #999;
-    margin-bottom: 20px;
-}
-.icon-weixin{
     color: #fff;
-    /* align-self: center; */
+    .search{
+        font-size: 14px;
+        color: #cccc;
+        margin-bottom: 20px;
+    }
+    h2{
+        margin: 10px 0;
+        font-size: 20px;
+    }
+    p{
+        width: 100%;
+        margin: 10px 0;
+        input{
+            width:100%;
+            height: 40px;
+            border-radius: 20px;
+            text-indent: 20px;
+            color: #fff;
+            background-color: rgba(255,255,255,.4);
+            &::placeholder{
+                color: #fff;
+                font-size: 14px;
+            }
+        }
+        button{
+            width:100%;
+            height: 40px;
+            border-radius: 20px;
+            text-indent: 20px;
+            color: #fff;
+            background-color: rgba(48, 216, 82, .6);
+        }
+    }
+    .code{
+        input{
+            width: 60%;
+            margin-right: 5%;
+        }
+        canvas{
+            width: 35%;
+            height: 40px;
+            // line-height: 40px;
+            vertical-align: top;
+            background-color: #fff;
+        }
+    }
+ 
+    .iconfont{
+        display: flex;
+        justify-content: flex-end;
+        font-size: 16px;
+    }
 }
-.icon-weixin a{
-    font-size: 12px;
-    display: inline-block;
-}
-.code input{
-    width: 150px;
-}
-strong{
-    display: inline-block;
-    background-color: #fff;
-    margin-left: 5px;  
-    width: 56px; 
+.mes{
+    color: deeppink;
+    font-size: 22px;
+    text-align: center;
 }

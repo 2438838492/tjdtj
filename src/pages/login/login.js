@@ -1,4 +1,8 @@
- require('./login.less');
+require('../../assets/css/common.css');
+require('../../assets/css/reset.css');
+require('./login.less');
+//工具函数
+const tools = require('../../assets/js/tools');
 //正则手机号码
 let reg = /^1[3456789]\d{9}$/im;
 //密码正则
@@ -43,6 +47,8 @@ function tel() {
         return corrct
     } else {
         document.querySelector('#username').style.border = '5px solid red';
+        let mes = tools.get('.mes');
+        mes.innerText = '亲输入正确的手机号'
     }
 
 }
@@ -55,5 +61,7 @@ function pws() {
         return corrct;
     } else {
         document.querySelector('#pws').style.border = '5px solid red';
+        let mes = tools.get('.mes');
+        mes.innerText = '亲输入正确密码'
     }
 }

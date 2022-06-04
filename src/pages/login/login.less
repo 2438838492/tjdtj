@@ -7,78 +7,64 @@ body {
     height         : 100%;
     display        : flex;
     flex-direction : column;
-    background     : url(../../assets/images/sign-bg.jpg)no-repeat center center;
+    background     : url(../../assets/images/sign-bg.jpg)no-repeat center top;
     background-size: cover;
 }
-
-.body {
-    display        : flex;
-    justify-content: end;
-
+.body{
+    width: 85%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: flex-end;
+    a{
+        color: #fff;
+        font-weight: bold;
+    }
 }
 
-.body a {
-    margin       : 20px 20px;
-    height       : 20px;
-    width        : 100px;
-    font-size    : 20px;
-    line-height  : 20px;
-    border-radius: 10px;
-    text-align   : center;
-    color        : #fff;
-}
-
-form {
-    /* background-color: deeppink; */
+.form{
+    width: 85%;
+    margin: 10px auto;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
+    color: #fff;
+    h2{
+        margin: 30px 0;
+    }
+    p{
+        width: 100%;
+        margin: 10px 0;
+        input{
+            width:100%;
+            height: 40px;
+            border-radius: 20px;
+            text-indent: 20px;
+            color: #fff;
+            background-color: rgba(255,255,255,.4);
+            &::placeholder{
+                color: #fff;
+                font-size: 14px;
+            }
+        }
+        button{
+            width:100%;
+            height: 40px;
+            border-radius: 20px;
+            text-indent: 20px;
+            color: #fff;
+            background-color: rgba(48, 216, 82, .6);
+        }
+    }
+    i{
+        display: flex;
+        // flex-direction:column;
+        justify-content: space-between;
+        font-style: normal;
+        font-size: 16px;
+        
+    }
 }
-
-form a {
-    display: block;
-    color    : #fff;
-    font-size: 30px;
-    margin   : 20px 0 60px  20px;
-    align-self: flex-start;
-}
-
-/* form p {
+.mes{
+    color: deeppink;
+    font-size: 22px;
     text-align: center;
-} */
-form input{
-    padding-left: 10px;
-    border-radius: 50px;
-    border: none;
-    height: 30px;
-    background-color: #867f88;
-    /* opacity: 0.4; */
-}
-input::placeholder{
-    color: #fff;
-    font-size:14px; 
-}
-
-form button{
-    color: #fff;
-    width: 225.6px;
-    height: 32px;
-    height: 30px ;
-    border: none;
-    border-radius:50px ;
-    background-color: #387f5c;
-    font-size: 14px;
-    line-height: 32px;
-}
-i{  
-    /* margin-right: 50px; */
-    color: #fff;
-    font-style: normal;
-    font-size: 12px;
-    align-self: center;
-    
-}
-i span{
-    margin-left: 50px;
 }
