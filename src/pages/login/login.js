@@ -1,5 +1,7 @@
 require('../../assets/css/common.css');
 require('../../assets/css/reset.css');
+//fonts
+require('../../assets/fonts/iconfont.css')
 require('./login.less');
 //工具函数
 const tools = require('../../assets/js/tools');
@@ -28,6 +30,7 @@ document.querySelector('button').addEventListener('click', function (v) {
                 console.log(JSON.parse(arr));
                 if (JSON.parse(arr).errno === 0) {
                     alert('登录成功');
+                    location.href = './index.html'
                 } else {
                     alert('该账号未注册')
                 }

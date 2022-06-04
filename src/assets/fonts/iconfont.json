@@ -1,42 +1,70 @@
 {
   "id": "3418927",
-  "name": "gd",
+  "name": "fitness",
   "font_family": "iconfont",
   "css_prefix_text": "icon-",
   "description": "",
   "glyphs": [
     {
+      "icon_id": "2070620",
+      "name": "密码-眼睛-关闭",
+      "font_class": "close",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "4908758",
+      "name": "密码-眼睛开",
+      "font_class": "open",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "4175511",
+      "name": "下箭头",
+      "font_class": "down",
+      "unicode": "eb6d",
+      "unicode_decimal": 60269
+    },
+    {
+      "icon_id": "826138",
+      "name": "结束",
+      "font_class": "over",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    },
+    {
       "icon_id": "7429",
       "name": "首页",
-      "font_class": "shouye",
+      "font_class": "index",
       "unicode": "e600",
       "unicode_decimal": 58880
     },
     {
       "icon_id": "444564",
       "name": "播放",
-      "font_class": "bofang",
+      "font_class": "play",
       "unicode": "e66a",
       "unicode_decimal": 58986
     },
     {
       "icon_id": "596890",
       "name": "敬请期待",
-      "font_class": "jingqingqidai",
+      "font_class": "expect",
       "unicode": "e652",
       "unicode_decimal": 58962
     },
     {
       "icon_id": "716048",
       "name": "音乐",
-      "font_class": "yinle",
+      "font_class": "music",
       "unicode": "e644",
       "unicode_decimal": 58948
     },
     {
       "icon_id": "1185485",
       "name": "微信",
-      "font_class": "weixin",
+      "font_class": "wechat",
       "unicode": "e63f",
       "unicode_decimal": 58943
     },
@@ -50,168 +78,168 @@
     {
       "icon_id": "1447736",
       "name": "暂停",
-      "font_class": "zanting",
+      "font_class": "suspend",
       "unicode": "e618",
       "unicode_decimal": 58904
     },
     {
       "icon_id": "2076218",
       "name": "播放2",
-      "font_class": "bofang1",
+      "font_class": "play2",
       "unicode": "e87c",
       "unicode_decimal": 59516
     },
     {
       "icon_id": "3001061",
       "name": "定位",
-      "font_class": "dingwei",
+      "font_class": "position",
       "unicode": "e653",
       "unicode_decimal": 58963
     },
     {
       "icon_id": "4015759",
       "name": "解锁",
-      "font_class": "jiesuo",
+      "font_class": "Unlock",
       "unicode": "e684",
       "unicode_decimal": 59012
     },
     {
       "icon_id": "5086561",
       "name": "推荐火苗",
-      "font_class": "tuijianhuomiao",
+      "font_class": "deep-heat",
       "unicode": "e613",
       "unicode_decimal": 58899
     },
     {
       "icon_id": "5485664",
       "name": "速度",
-      "font_class": "sudu",
+      "font_class": "speed",
       "unicode": "e619",
       "unicode_decimal": 58905
     },
     {
       "icon_id": "5732759",
       "name": "定位",
-      "font_class": "dingwei1",
+      "font_class": "position2",
       "unicode": "ec32",
       "unicode_decimal": 60466
     },
     {
       "icon_id": "6865347",
       "name": "设置",
-      "font_class": "shezhi",
+      "font_class": "set",
       "unicode": "e60f",
       "unicode_decimal": 58895
     },
     {
       "icon_id": "7417094",
       "name": "音乐",
-      "font_class": "yinle1",
+      "font_class": "music2",
       "unicode": "e602",
       "unicode_decimal": 58882
     },
     {
       "icon_id": "9495526",
       "name": "数据",
-      "font_class": "shuju",
+      "font_class": "data",
       "unicode": "e62e",
       "unicode_decimal": 58926
     },
     {
       "icon_id": "10156124",
       "name": "菜单",
-      "font_class": "caidan",
+      "font_class": "menu",
       "unicode": "e61d",
       "unicode_decimal": 58909
     },
     {
       "icon_id": "10212306",
       "name": "锁定",
-      "font_class": "suoding",
+      "font_class": "lock",
       "unicode": "e64a",
       "unicode_decimal": 58954
     },
     {
       "icon_id": "10707252",
       "name": "箭头 右 right",
-      "font_class": "jiantouyou",
+      "font_class": "right",
       "unicode": "e61b",
       "unicode_decimal": 58907
     },
     {
       "icon_id": "11372699",
       "name": "时间",
-      "font_class": "shijian",
+      "font_class": "time",
       "unicode": "e8b8",
       "unicode_decimal": 59576
     },
     {
       "icon_id": "11463941",
       "name": "定位",
-      "font_class": "dingwei2",
+      "font_class": "position3",
       "unicode": "e603",
       "unicode_decimal": 58883
     },
     {
       "icon_id": "12052382",
       "name": "心跳",
-      "font_class": "xintiao1",
+      "font_class": "heat",
       "unicode": "e65f",
       "unicode_decimal": 58975
     },
     {
       "icon_id": "12820813",
       "name": "我的_新",
-      "font_class": "wode",
+      "font_class": "my",
       "unicode": "e659",
       "unicode_decimal": 58969
     },
     {
       "icon_id": "17654824",
       "name": "暂停",
-      "font_class": "zanting1",
+      "font_class": "suspend2",
       "unicode": "e637",
       "unicode_decimal": 58935
     },
     {
       "icon_id": "18016234",
       "name": "下一曲",
-      "font_class": "xiayiqu",
+      "font_class": "next",
       "unicode": "e601",
       "unicode_decimal": 58881
     },
     {
       "icon_id": "20266231",
       "name": "音乐",
-      "font_class": "yinle2",
+      "font_class": "music4",
       "unicode": "e6e3",
       "unicode_decimal": 59107
     },
     {
       "icon_id": "22831176",
       "name": "抽屉",
-      "font_class": "chouti",
+      "font_class": "drawer",
       "unicode": "e6c1",
       "unicode_decimal": 59073
     },
     {
       "icon_id": "24351164",
       "name": "徽章",
-      "font_class": "huizhang",
+      "font_class": "badge",
       "unicode": "e77b",
       "unicode_decimal": 59259
     },
     {
       "icon_id": "26852105",
       "name": "上一曲",
-      "font_class": "shangyiqu",
+      "font_class": "previous",
       "unicode": "e655",
       "unicode_decimal": 58965
     },
     {
       "icon_id": "28508587",
       "name": "杠铃",
-      "font_class": "gangling",
+      "font_class": "barbell",
       "unicode": "e67a",
       "unicode_decimal": 59002
     }
