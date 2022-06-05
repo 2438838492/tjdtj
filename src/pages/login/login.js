@@ -27,9 +27,11 @@ document.querySelector('button').addEventListener('click', function (v) {
         ajax.addEventListener('readystatechange', function () {
             if (ajax.readyState === 4 && ajax.status === 200) {
                 arr = ajax.responseText;
-                console.log(JSON.parse(arr));
+                let data = JSON.parse(arr);
                 if (JSON.parse(arr).errno === 0) {
-                    alert('登录成功');
+                    alert('登录成功');      
+                    //向本地存储写入token
+                    localStorage.setItem("token",data.data.token) ;
                     location.href = './index.html'
                 } else {
                     alert('该账号未注册')

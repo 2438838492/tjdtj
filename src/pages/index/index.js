@@ -1,36 +1,78 @@
 require('../../assets/css/common.css');
 require('../../assets/css/reset.css');
+
+//swiper样式
+require('../../libs/swiper8/swiper-bundle.min.css');
+
+//字体图标
 require('../../assets/fonts/iconfont.css');
 
-//引入swiper
-// import Swiper styles
-//import Swiper from 'swiper';
-// import Swiper JS
-//import 'swiper/swiper-bundle.css';
-//CommonJs
-const Swiper = require('swiper');    
-// const mySwiper = new Swiper('.swiper', { /* ... */ });
-
+//当前页面样式
 require('./index.less');
+
+const Swiper = require('../../libs/swiper8/swiper-bundle.min.js');
+
 //工具函数
 const tools = require('../../assets/js/tools');
 
-//运动
-let montion = tools.get('.motion');
-montion.addEventListener('click', function () {
-  location.href = './motion.html'
+
+const { default: axios } = require('axios');
+
+//swiper 轮播图
+var mySwiper = new Swiper('.swiper', {
+  loop: true, // 循环模式选项
+  autoplay: {
+    delay: 1000,
+    stopOnLastSlide: false,
+    disableOnInteraction: false,//禁止手滑后停止轮播
+  },
+  // 如果需要分页器
+  pagination: {
+    el: '.swiper-pagination',
+  },
 })
 
-// Swiper
-// tools.get('header');
-/* Swiper.use([Navigation, Pagination]); // 使用需要的功能
-const mySwiper = new Swiper('.swiper-container', {
-  loop: true,
-  pagination: {
-    el: '.swiper-pagination', // 分页器
-  },
-  navigation: {
-    nextEl: '.swiper-button-next', //切换箭头
-    prevEl: '.swiper-button-prev',
-  },
-})  */
+//页面加载获取用户数据
+document.addEventListener('DOMContentLoaded', function () {
+  axios.get('http://47.96.154.185:3701/api/user/info', {
+    headers: { 'authorization': 'Bearer ' + localStorage.getItem('token') },
+  })
+    .then(function (data) {
+      let res = data.data.data; //获取到的用户数据
+      // console.log(data);
+      tools.get('.first em').textContent = res.ranking;//排名
+      tools.get('.second em').innerText = res.clockCount + '天';//签到
+      tools.get('#badge').innerText = res.badges;//徽章
+    })
+
+  //页面加载时获取打卡信息 以获取就禁止打卡
+  axios.get('http://47.96.154.185:3701/api/user/clockInInfo', {
+    headers: { 'authorization': 'Bearer ' + localStorage.getItem('token'), }
+  })
+    .then(function (data) {
+      //判断是否打卡
+      let res = data.data.data;
+      // console.log(res);
+      if (res.isClockIn) {
+        //已打卡
+        tools.get('.second button').disabled = true;
+        tools.get('.second button').textContent = '已打卡';
+        tools.get('.second button').style.color = 'deeppink';
+      }
+    })
+
+  //提交打卡信息
+  tools.get('.second button').addEventListener('click', function () {
+    axios.post('http://47.96.154.185:3701/api/user/clockIn', {}, {
+      headers: {
+        'authorization': 'Bearer ' + localStorage.getItem('token')
+      }
+    }).then(function (res) {
+      if (res.data.errno === 0) {
+        alert('打卡成功')
+      } else {
+        alert(res.data.message)
+      }
+    })
+  })
+})

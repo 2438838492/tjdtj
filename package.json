@@ -27,7 +27,7 @@
     "webpack-dev-server": "3.11.2"
   },
   "dependencies": {
-    "captcha-mini": "^1.1.0",
-    "swiper": "^8.2.2"
+    "axios": "^0.27.2",
+    "captcha-mini": "^1.1.0"
   }
 }
