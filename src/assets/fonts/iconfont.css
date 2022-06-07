@@ -1,9 +1,9 @@
 @font-face {
   font-family: "iconfont"; /* Project id 3418927 */
-  src: url('iconfont.woff2?t=1654341953097') format('woff2'),
-       url('iconfont.woff?t=1654341953097') format('woff'),
-       url('iconfont.ttf?t=1654341953097') format('truetype'),
-       url('iconfont.svg?t=1654341953097#iconfont') format('svg');
+  src: url('iconfont.woff2?t=1654599980177') format('woff2'),
+       url('iconfont.woff?t=1654599980177') format('woff'),
+       url('iconfont.ttf?t=1654599980177') format('truetype'),
+       url('iconfont.svg?t=1654599980177#iconfont') format('svg');
 }
 
 .iconfont {
@@ -12,6 +12,22 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-left:before {
+  content: "\e672";
+}
+
+.icon-yundong:before {
+  content: "\e63a";
+}
+
+.icon--dayaling:before {
+  content: "\e69b";
+}
+
+.icon-quanquan:before {
+  content: "\e604";
 }
 
 .icon-close:before {
@@ -144,9 +160,5 @@
 
 .icon-previous:before {
   content: "\e655";
-}
-
-.icon-barbell:before {
-  content: "\e67a";
 }
 

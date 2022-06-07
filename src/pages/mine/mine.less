@@ -1,0 +1,161 @@
+ html {
+     background-color: #CCC;
+     height          : 100%;
+ }
+
+ body {
+     height        : 100%;
+     display       : flex;
+     flex-direction: column;
+ }
+
+ main {
+     height   : 1px;
+     flex-grow: 1;
+
+     .message {
+         height          : 22%;
+         background-color: #fff;
+
+         .userinfo {
+             padding: 20px 5% 0 5%;
+
+             .img {
+                 display        : flex;
+                 align-items    : center;
+                 justify-content: flex-start;
+                 position       : relative;
+
+                 img {
+                     width        : 80px;
+                     height       : 80px;
+                     border-radius: 40px;
+                     padding      : 1px;
+                     display      : inline-block;
+                     border       : 3px solid rgb(rgb(226, 16, 135));
+                     border-radius: 40px;
+                 }
+
+                 .username {
+                     margin-left: 20px;
+                     font-size  : 20px;
+                     font-weight: bold;
+                     color      : rgb(rgba(13, 217, 220, .8));
+                 }
+
+                 .icon-right {
+                     position   : absolute;
+                     right      : 0;
+                     font-size  : 30px;
+                     color      : rgb(13, 220, 16);
+                     font-weight: bolder;
+                 }
+             }
+
+             p {
+                 font-size : 16px;
+                 margin-top: 5px;
+                 color     : red;
+             }
+         }
+     }
+
+     .data {
+
+         background-color: #fff;
+         margin-top      : 20px;
+         padding         : 5px 5% 0;
+
+         .top {
+             .icon-data {
+                 color       : deepskyblue;
+                 margin-right: 10px;
+                 font-weight : bolder;
+                 font-size   : 20px;
+             }
+
+             .icon-right {
+                 font-size: 25px;
+                 float    : right;
+             }
+             .icon-badge{
+                 color: #FFD700;
+                 font-weight : bolder;
+                 font-size: 24px;
+                 margin-right: 10px;
+             }
+         }
+
+         .bottom {
+             display        : flex;
+             justify-content: space-between;
+
+             p {
+                 font-size: 16px;
+                 color    : #666;
+                 margin   : 20px 0;
+             }
+
+             span {
+                 font-size: 40px;
+                 color    : rgba(17, 206, 77, 0.7);
+             }
+
+         }
+     }
+
+
+
+     .round {
+         display        : flex;
+         justify-content: space-evenly;
+
+         div {
+             width        : 100px;
+             height       : 100px;
+             border-radius: 50px;
+             border       : 1px solid deeppink;
+             margin       : 10px 2px;
+         }
+     }
+
+     .loginout {
+         margin-top      : 50px;
+         color           : deeppink;
+         background-color: #fff;
+         line-height     : 50px;
+         text-align      : center;
+         font-size       : 18px;
+         font-weight     : bold;
+     }
+ }
+
+ .tabbar {
+     height          : 60px;
+     width           : 100%;
+     background-color: #fff;
+     display         : flex;
+     justify-content : center;
+
+     a {
+         display   : inline-block;
+         width     : 15%;
+         text-align: center;
+         margin    : 6px 10px;
+         color: #333;
+
+        &.on{
+            color: deepskyblue;
+            font-weight: bold;
+        }
+
+         .iconfont {
+             font-size: 28px;
+         }
+
+         span {
+             display  : block;
+             font-size: 14px;
+         }
+     }
+ }

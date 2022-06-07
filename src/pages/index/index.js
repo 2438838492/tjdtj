@@ -16,8 +16,7 @@ const Swiper = require('../../libs/swiper8/swiper-bundle.min.js');
 const tools = require('../../assets/js/tools');
 
 //引入封装axios包
-const axios = require('../../assets/js/axios');
-const instance = require('../../assets/js/axios');
+const ajax = require('../../assets/js/axios');
 
 //swiper 轮播图
 var mySwiper = new Swiper('.swiper', {
@@ -35,7 +34,7 @@ var mySwiper = new Swiper('.swiper', {
 
 //页面加载获取用户数据
 document.addEventListener('DOMContentLoaded', function () {
-  instance.get('/api/user/info')
+  ajax.get('/api/user/info')
     .then(function (data) {
       let res = data.data.data; //获取到的用户数据
       // console.log(data);
@@ -44,8 +43,8 @@ document.addEventListener('DOMContentLoaded', function () {
       tools.get('#badge').innerText = res.badges;//徽章
     })
 
-  //页面加载时获取打卡信息 以获取就禁止打卡
-  instance.get('/api/user/clockInInfo')
+  //页面加载时获取打卡信息 以打卡就禁止打卡
+  ajax.get('/api/user/clockInInfo')
     .then(function (data) {
       //判断是否打卡
       let res = data.data.data;
@@ -60,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   //提交打卡信息
   tools.get('.second button').addEventListener('click', function () {
-    instance.post('/api/user/clockIn',)
+    ajax.post('/api/user/clockIn',)
       .then(function (res) {
         if (res.data.errno === 0) {
           alert('打卡成功')

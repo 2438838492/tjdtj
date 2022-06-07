@@ -6,6 +6,34 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "16746796",
+      "name": "箭头-向左",
+      "font_class": "left",
+      "unicode": "e672",
+      "unicode_decimal": 58994
+    },
+    {
+      "icon_id": "1079514",
+      "name": "运动",
+      "font_class": "yundong",
+      "unicode": "e63a",
+      "unicode_decimal": 58938
+    },
+    {
+      "icon_id": "6203409",
+      "name": "11-3大哑铃",
+      "font_class": "-dayaling",
+      "unicode": "e69b",
+      "unicode_decimal": 59035
+    },
+    {
+      "icon_id": "10622219",
+      "name": "圈子",
+      "font_class": "quanquan",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
       "icon_id": "2070620",
       "name": "密码-眼睛-关闭",
       "font_class": "close",
@@ -235,13 +263,6 @@
       "font_class": "previous",
       "unicode": "e655",
       "unicode_decimal": 58965
-    },
-    {
-      "icon_id": "28508587",
-      "name": "杠铃",
-      "font_class": "barbell",
-      "unicode": "e67a",
-      "unicode_decimal": 59002
     }
   ]
 }
