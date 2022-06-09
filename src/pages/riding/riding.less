@@ -142,7 +142,7 @@ html,body{
         
     }
 
- .mean{
+/*  .mean{
     height: 10%;
     display: flex;
     justify-content: space-evenly;
@@ -165,5 +165,34 @@ html,body{
         color: #4294FF;
         font-weight: bold;
     }
- }
+ } */
+}
+.tabbar {
+    height          : 60px;
+    width           : 100%;
+    background-color: #fff;
+    display         : flex;
+    justify-content : center;
+
+    a {
+        display   : inline-block;
+        width     : 15%;
+        text-align: center;
+        margin    : 6px 10px;
+        color: #333;
+
+        &.on {
+            color      : deepskyblue;
+            font-weight: bold;
+        }
+
+        .iconfont {
+            font-size: 28px;
+        }
+
+        span {
+            display  : block;
+            font-size: 14px;
+        }
+    }
 }

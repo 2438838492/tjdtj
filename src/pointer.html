@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 30px;
+            border-radius: 15px;
+            background-color: #ccc;
+            padding-left: 20px;
+        }
+        video{
+            width: 100px;
+            height: 100px;
+        }
+        span {
+            background: deeppink;
+            display: block;
+            width: 20px;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <video autoplay muted src="../../../../../Taylor.Swift.City.of.Lover.Concert.2020.HD1080P.X264.AAC.English.CHS-ENG.BDE4.mp4"></video>
+    <div>
+        <span></span>
+    </div>
+    <script>
+        document.querySelector('span').addEventListener('pointerdown',function(e){
+            console.log(e);
+        })
+
+        document.querySelector('video').addEventListener('click',function(){
+            this.paused();
+        });
+    </script>
+</body>
+
+</html>
