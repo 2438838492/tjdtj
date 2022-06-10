@@ -1,0 +1,131 @@
+html {
+    height: 100%;
+}
+
+body {
+    height          : 100%;
+    background-color: #1592CC;
+    color           : #fff;
+    display         : flex;
+    flex-direction  : column;
+    padding         : 20px 15px;
+
+    .header {
+        display        : flex;
+        margin-bottom  : 20px;
+        justify-content: space-between;
+
+        .head-left {
+            p {
+                color    : #ccc;
+                font-size: 16px;
+            }
+        }
+
+        .head-right {
+            height         : 100%;
+            display        : flex;
+            justify-content: space-evenly;
+            align-items    : center;
+
+            .iconfont {
+                display  : inline-block;
+                font-size: 25px;
+                margin   : 0 0 0 10px;
+            }
+
+        }
+    }
+
+    .kilometer {
+        width: 100%;
+
+        p {
+            display    : block;
+            text-align : center;
+            line-height: 200px;
+            font-size  : 60px;
+
+            span {
+                font-size: 20px;
+            }
+        }
+    }
+
+    p {
+        display        : flex;
+        justify-content: space-between;
+        align-items    : center;
+    }
+
+    .details {
+        flex-grow      : 1;
+        display        : flex;
+        justify-content: space-around;
+        padding-top    : 50px;
+
+        div {
+            float     : left;
+            height    : 100%;
+            text-align: center;
+
+            span {
+                display: block;
+                font-size: 40px;
+            }
+
+            i {
+                display: block;
+                margin : 20px 0px 40px 0;
+                font-style: normal;
+                font-size: 16px;
+            }
+
+            em {
+                display: block;
+                font-size: 30px;
+            }
+        }
+
+    }
+
+    .operate {
+        height         : 100px;
+        display        : flex;
+        justify-content: space-evenly;
+
+        .pause {
+            height          : 100px;
+            width           : 100px;
+            text-align      : center;
+            line-height     : 100px;
+            border-radius   : 50px;
+            background-color: #fff;
+            color           : #1592CC;
+        }
+
+        .continue {
+            display         : none;
+            height          : 100px;
+            width           : 100px;
+            text-align      : center;
+            line-height     : 100px;
+            border-radius   : 50px;
+            background-color: rgba(14, 228, 57, 0.8);
+            color           : #FFF;
+        }
+
+        .end {
+            display         : none;
+            height          : 100px;
+            width           : 100px;
+            text-align      : center;
+            line-height     : 100px;
+            border-radius   : 50px;
+            background-color: rgba(232, 13, 13, 0.9);
+            color           : #FFF;
+        }
+    }
+
+
+}

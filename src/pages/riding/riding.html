@@ -5,6 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+        window._AMapSecurityConfig = {
+            securityJsCode: 'c37b3a4b13c0970fce72ec41c76e94c8',
+        }
+
+    </script>
+    <script type="text/javascript"
+        src="https://webapi.amap.com/maps?v=2.0&key=ac33f78f53865933e22b3a05a8ab2e8d"></script>
     <title>Document</title>
 </head>
 
@@ -23,21 +31,24 @@
         </header>
 
         <div class="map">
-           <!--  <div class="run-type">
-                <span class="on">户外跑</span>
-                <span>燃脂跑</span>
-                <span>跑步机</span>
-            </div>
- -->
-            <div class="go">
-                GO
-            </div>
+            <div id="container"></div>
+            <div class="position">
+               <!--  <div class="run-type">
+                    <span class="on">户外跑</span>
+                    <span>燃脂跑</span>
+                    <span>跑步机</span>
+                </div> -->
 
-            <div class="function">
-                <span class="iconfont icon-set"></span>
-                <!-- <span class="target">设置目标 ></span> -->
-                <span class="iconfont icon-music"> </span>
-            </div> 
+                <div class="go">
+                    GO
+                </div>
+
+                <div class="function">
+                    <span class="iconfont icon-set"></span>
+                    <!-- <span class="target">设置目标 ></span> -->
+                    <span class="iconfont icon-music"> </span>
+                </div>
+            </div>
         </div>
 
         <div class="route">
@@ -63,6 +74,15 @@
                 <span>我的</span>
             </a>
         </div>
+
+        <!-- 模态框 -->
+
+        <div class="mask">
+            <div class="countdown">
+                3
+            </div>
+        </div>
+        
     </div>
 </body>
 

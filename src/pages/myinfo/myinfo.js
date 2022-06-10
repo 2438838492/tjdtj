@@ -12,9 +12,6 @@ const tools = require('../../assets/js/tools');
 
 //引入封装axios包
 const ajax = require('../../assets/js/axios');
-const { default: axios } = require('axios');
-const { get } = require('../../assets/js/tools');
-
 
 document.addEventListener('DOMContentLoaded', function () {
     //上传头像
@@ -140,7 +137,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 alert('保存成功')
             }
         })
-        console.log(cityId);
+        // console.log(cityId);
     })
     /* 
     ajax.get('/api/user/info').then(function (r) {
@@ -150,15 +147,14 @@ document.addEventListener('DOMContentLoaded', function () {
     //数据回填
     ajax.get('/api/user/info').then(function (res) {
         let info = res.data.data;
-        console.log(info);
+        // console.log(info);
         tools.get('.nickName').value = info.nickName;
-        tools.get('.gender').textContent = info.genser === 0 ? '男' : '女';
+        tools.get('.gender').textContent = info.gender === 0 ? '男' : '女';
         tools.get('.birthday').textContent = info.birthday;
         tools.get('#avatar-img').src = info.imgUrl;
         tools.get('.textarea').textContent = info.sign;
         tools.get('.city').textContent = info.cityId;
         // tools.get('.previous').textContent = info.provinceId;
-
         //省份回填
         ajax.get('/api/shared/province').then(function (v) {
             // 省份列表
@@ -167,19 +163,20 @@ document.addEventListener('DOMContentLoaded', function () {
             let newArr = arr.filter(function (v) {
                 return v.id === info.provinceId;
             })
-            // console.log(newArr[0].name);
-            tools.get('.previous').textContent = newArr[0].name;
+            //  console.log(newArr);
+           tools.get('.previous').textContent = newArr[0].name;
         })
 
         // 城市回填
         ajax.get('/api/shared/city?provinceId=' + info.provinceId)
             .then(function (r) {
                 let arr = r.data.data;
-                ///console.log(arr);
+                // console.log(arr);
                 let newArr = arr.filter(function (v) {
+                    // console.log(v);
                     return v.id === info.cityId;
                 })
-                console.log(newArr);
+                // console.log(newArr);
                 tools.get('.city').textContent = newArr[0].name;
             })
         //个性签名字数显示
