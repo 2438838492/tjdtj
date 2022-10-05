@@ -10,3 +10,24 @@ const tools = require('../../assets/js/tools');
 var map = new AMap.Map('container', {
     zoom: 14
 })
+
+tools.get('.go').addEventListener('click', function () {
+    tools.get('.mask').style.display = 'flex';
+
+    let n = 3;
+    let timer = null;
+    timer = setInterval(function () {
+        n--;
+        tools.get('.countdown').textContent = n;
+        if (n === 0) {
+            tools.get('.countdown').textContent = 'GO';
+        }
+        if (n < 0) {
+            tools.get('.countdown').textContent = '';
+            location.href = './sporting.html';
+            clearInterval(timer)
+        }
+    }, 1000)
+
+
+})
